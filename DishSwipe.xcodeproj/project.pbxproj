@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17506278A655AA8A7F6F8D43 /* LoopingVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEBF37DA8F44867A7238ACC /* LoopingVideoPlayer.swift */; };
+		267BFD2C2407B143872B5292 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1896742456D0FE8F3C11BAE /* AppModel.swift */; };
+		37CB38DBAA0A8434D951E2EC /* curry.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B5267B0581349A9F5CD59444 /* curry.mp4 */; };
+		763D490523D7BA63823603D8 /* SwipeDeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6297D1BE2F24915104E8AE /* SwipeDeckTests.swift */; };
+		7BC6435C3D2AF0951AE0F063 /* DishSwipeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9410293E39035738180BBDA /* DishSwipeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99F1C96453D2457B99A1EEAB /* tacos.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D1262F760BD46E93B00D4C1E /* tacos.mp4 */; };
+		A3ED7E70EF48DA3FB029C1E0 /* steak.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23515898AA92444C75AC36F4 /* steak.mp4 */; };
+		A771056A1FA52FF9A23C8471 /* pizza.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5CA7A57DD4480F37C9B78555 /* pizza.mp4 */; };
+		BB5172BD6A3399290B29429C /* SwipeDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905B6B36DE27E1817CCE7E3 /* SwipeDeck.swift */; };
+		BF5A93687F14570ED9F0C849 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEB1D3EA52776B20382A0AC /* DiscoverView.swift */; };
+		C8B86B427142E2B072D6781D /* DishSwipeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9410293E39035738180BBDA /* DishSwipeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC939BFD25079E6C9D056EB1 /* ramen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA711A4D073E9D3FDE179B86 /* ramen.mp4 */; };
+		DFD8CE050723759BA92625CD /* DishSwipeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9410293E39035738180BBDA /* DishSwipeCore.framework */; };
+		EB07C47FCBBD9E1F831A5804 /* DishSwipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AD900AC07FADDC007583BA /* DishSwipeApp.swift */; };
+		FFA7BC1FC31AC04FAD1FEC9B /* DishSwipeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9410293E39035738180BBDA /* DishSwipeCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C75C4C9391D2F9A3FAD3706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B3801F7EEBADE2A7B863D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E286402EB84F7B056664E7B3;
+			remoteInfo = DishSwipeCore;
+		};
+		46EF1B2E6A8914D5247DA51B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B3801F7EEBADE2A7B863D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E286402EB84F7B056664E7B3;
+			remoteInfo = DishSwipeCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21ADF81968768FB3A992465C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BC6435C3D2AF0951AE0F063 /* DishSwipeCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		940EF995B4A845F8F6417176 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8B86B427142E2B072D6781D /* DishSwipeCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		23515898AA92444C75AC36F4 /* steak.mp4 */ = {isa = PBXFileReference; path = steak.mp4; sourceTree = "<group>"; };
+		34AD900AC07FADDC007583BA /* DishSwipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishSwipeApp.swift; sourceTree = "<group>"; };
+		4ED4856B7368B13E231391A7 /* DishSwipe.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DishSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6297D1BE2F24915104E8AE /* SwipeDeckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDeckTests.swift; sourceTree = "<group>"; };
+		5CA7A57DD4480F37C9B78555 /* pizza.mp4 */ = {isa = PBXFileReference; path = pizza.mp4; sourceTree = "<group>"; };
+		77CE8F463A5F95CF174F6AED /* DishSwipeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DishSwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5267B0581349A9F5CD59444 /* curry.mp4 */ = {isa = PBXFileReference; path = curry.mp4; sourceTree = "<group>"; };
+		C9410293E39035738180BBDA /* DishSwipeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DishSwipeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1262F760BD46E93B00D4C1E /* tacos.mp4 */ = {isa = PBXFileReference; path = tacos.mp4; sourceTree = "<group>"; };
+		D1896742456D0FE8F3C11BAE /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		DA711A4D073E9D3FDE179B86 /* ramen.mp4 */ = {isa = PBXFileReference; path = ramen.mp4; sourceTree = "<group>"; };
+		E905B6B36DE27E1817CCE7E3 /* SwipeDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDeck.swift; sourceTree = "<group>"; };
+		EBEBF37DA8F44867A7238ACC /* LoopingVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideoPlayer.swift; sourceTree = "<group>"; };
+		FEEB1D3EA52776B20382A0AC /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49DA538ECBF45D72DCF3AC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD8CE050723759BA92625CD /* DishSwipeCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6CBCD56CAB8E97E5734D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA7BC1FC31AC04FAD1FEC9B /* DishSwipeCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6CFA5ACC80C31BB77E6B3C /* DishSwipeCore */ = {
+			isa = PBXGroup;
+			children = (
+				E905B6B36DE27E1817CCE7E3 /* SwipeDeck.swift */,
+			);
+			name = DishSwipeCore;
+			path = Sources/DishSwipeCore;
+			sourceTree = "<group>";
+		};
+		3DD5C226D1D38E35D51E0C5B = {
+			isa = PBXGroup;
+			children = (
+				8AF946B842BD56BAE9AABDD3 /* App */,
+				3D6CFA5ACC80C31BB77E6B3C /* DishSwipeCore */,
+				F55BFAF0232E060DF8990D2A /* DishSwipeCoreTests */,
+				B1966F031D1C955A071BC7DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84E894368B31CB14D3765887 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C87B53BEA00C6B490275FD2E /* Media */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AF946B842BD56BAE9AABDD3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D1896742456D0FE8F3C11BAE /* AppModel.swift */,
+				FEEB1D3EA52776B20382A0AC /* DiscoverView.swift */,
+				34AD900AC07FADDC007583BA /* DishSwipeApp.swift */,
+				EBEBF37DA8F44867A7238ACC /* LoopingVideoPlayer.swift */,
+				84E894368B31CB14D3765887 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B1966F031D1C955A071BC7DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED4856B7368B13E231391A7 /* DishSwipe.app */,
+				C9410293E39035738180BBDA /* DishSwipeCore.framework */,
+				77CE8F463A5F95CF174F6AED /* DishSwipeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C87B53BEA00C6B490275FD2E /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B5267B0581349A9F5CD59444 /* curry.mp4 */,
+				5CA7A57DD4480F37C9B78555 /* pizza.mp4 */,
+				DA711A4D073E9D3FDE179B86 /* ramen.mp4 */,
+				23515898AA92444C75AC36F4 /* steak.mp4 */,
+				D1262F760BD46E93B00D4C1E /* tacos.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		F55BFAF0232E060DF8990D2A /* DishSwipeCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B6297D1BE2F24915104E8AE /* SwipeDeckTests.swift */,
+			);
+			name = DishSwipeCoreTests;
+			path = Tests/DishSwipeCoreTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2EE7928436B6D93A4884538 /* DishSwipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896917F1E07B729969B12694 /* Build configuration list for PBXNativeTarget "DishSwipe" */;
+			buildPhases = (
+				CA3799845BD2C66875FB6368 /* Sources */,
+				192E137B79D7FE370733DA87 /* Resources */,
+				49DA538ECBF45D72DCF3AC2F /* Frameworks */,
+				21ADF81968768FB3A992465C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63462CC2D6B0BC493BDBE362 /* PBXTargetDependency */,
+			);
+			name = DishSwipe;
+			packageProductDependencies = (
+			);
+			productName = DishSwipe;
+			productReference = 4ED4856B7368B13E231391A7 /* DishSwipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E06C2AB2228EED8F0D7531DD /* DishSwipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE5845C21A6A063B664066D /* Build configuration list for PBXNativeTarget "DishSwipeTests" */;
+			buildPhases = (
+				2CAA914A8E6010ADCA980C92 /* Sources */,
+				8B6CBCD56CAB8E97E5734D54 /* Frameworks */,
+				940EF995B4A845F8F6417176 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				215AD6BCC31A85B01ECA8DB0 /* PBXTargetDependency */,
+			);
+			name = DishSwipeTests;
+			packageProductDependencies = (
+			);
+			productName = DishSwipeTests;
+			productReference = 77CE8F463A5F95CF174F6AED /* DishSwipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E286402EB84F7B056664E7B3 /* DishSwipeCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F28CB72D2F13255B3CEC2A /* Build configuration list for PBXNativeTarget "DishSwipeCore" */;
+			buildPhases = (
+				02A9D3F188D2FDA0B9453F90 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DishSwipeCore;
+			packageProductDependencies = (
+			);
+			productName = DishSwipeCore;
+			productReference = C9410293E39035738180BBDA /* DishSwipeCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34B3801F7EEBADE2A7B863D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A2EE7928436B6D93A4884538 = {
+						DevelopmentTeam = "";
+					};
+					E06C2AB2228EED8F0D7531DD = {
+						DevelopmentTeam = "";
+					};
+					E286402EB84F7B056664E7B3 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 7D2F64077C9E603404B5923A /* Build configuration list for PBXProject "DishSwipe" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3DD5C226D1D38E35D51E0C5B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B1966F031D1C955A071BC7DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E286402EB84F7B056664E7B3 /* DishSwipeCore */,
+				A2EE7928436B6D93A4884538 /* DishSwipe */,
+				E06C2AB2228EED8F0D7531DD /* DishSwipeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		192E137B79D7FE370733DA87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CB38DBAA0A8434D951E2EC /* curry.mp4 in Resources */,
+				A771056A1FA52FF9A23C8471 /* pizza.mp4 in Resources */,
+				DC939BFD25079E6C9D056EB1 /* ramen.mp4 in Resources */,
+				A3ED7E70EF48DA3FB029C1E0 /* steak.mp4 in Resources */,
+				99F1C96453D2457B99A1EEAB /* tacos.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02A9D3F188D2FDA0B9453F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5172BD6A3399290B29429C /* SwipeDeck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CAA914A8E6010ADCA980C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763D490523D7BA63823603D8 /* SwipeDeckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3799845BD2C66875FB6368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267BFD2C2407B143872B5292 /* AppModel.swift in Sources */,
+				BF5A93687F14570ED9F0C849 /* DiscoverView.swift in Sources */,
+				EB07C47FCBBD9E1F831A5804 /* DishSwipeApp.swift in Sources */,
+				17506278A655AA8A7F6F8D43 /* LoopingVideoPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		215AD6BCC31A85B01ECA8DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E286402EB84F7B056664E7B3 /* DishSwipeCore */;
+			targetProxy = 46EF1B2E6A8914D5247DA51B /* PBXContainerItemProxy */;
+		};
+		63462CC2D6B0BC493BDBE362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E286402EB84F7B056664E7B3 /* DishSwipeCore */;
+			targetProxy = 1C75C4C9391D2F9A3FAD3706 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002D177D412EE15DE81E0E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DishSwipe;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipe;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		29542C42D4924481B52E1DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DishSwipe;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipe;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		458F40E01DED40C085A2E027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		586D0A24E02B0E225E10F23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipeCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		8D57E5AA7B0A6BB6D8AA9892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D279954588605D27B16860D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D56F88F4071F258E4C7C319A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipeCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		F4F60E844F53881FF4DA56C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D2F64077C9E603404B5923A /* Build configuration list for PBXProject "DishSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F60E844F53881FF4DA56C8 /* Debug */,
+				D279954588605D27B16860D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		896917F1E07B729969B12694 /* Build configuration list for PBXNativeTarget "DishSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29542C42D4924481B52E1DAC /* Debug */,
+				002D177D412EE15DE81E0E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4F28CB72D2F13255B3CEC2A /* Build configuration list for PBXNativeTarget "DishSwipeCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56F88F4071F258E4C7C319A /* Debug */,
+				586D0A24E02B0E225E10F23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FFE5845C21A6A063B664066D /* Build configuration list for PBXNativeTarget "DishSwipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458F40E01DED40C085A2E027 /* Debug */,
+				8D57E5AA7B0A6BB6D8AA9892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34B3801F7EEBADE2A7B863D9 /* Project object */;
+}

@@ -1,0 +1,59 @@
+name: DishSwipe
+options:
+  bundleIdPrefix: com.khoanguyen
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: ""
+targets:
+  DishSwipeCore:
+    type: framework
+    platform: iOS
+    sources:
+      - Sources/DishSwipeCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.khoanguyen.DishSwipeCore
+        GENERATE_INFOPLIST_FILE: YES
+        SKIP_INSTALL: YES
+  DishSwipe:
+    type: application
+    platform: iOS
+    sources:
+      - App
+    resources:
+      - path: App/Resources/Media
+    dependencies:
+      - target: DishSwipeCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.khoanguyen.DishSwipe
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: DishSwipe
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1"
+  DishSwipeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/DishSwipeCoreTests
+    dependencies:
+      - target: DishSwipeCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.khoanguyen.DishSwipeTests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  DishSwipe:
+    build:
+      targets:
+        DishSwipe: all
+        DishSwipeCore: [test]
+        DishSwipeTests: [test]
+    test:
+      targets:
+        - DishSwipeTests

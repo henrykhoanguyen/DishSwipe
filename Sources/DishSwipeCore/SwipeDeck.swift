@@ -1,18 +1,61 @@
 import Foundation
 
+public struct Ingredient: Identifiable, Hashable, Sendable {
+    public let id: String
+    public let name: String
+    public let amount: String
+    public let priceInCents: Int
+
+    public init(id: String, name: String, amount: String, priceInCents: Int) {
+        self.id = id
+        self.name = name
+        self.amount = amount
+        self.priceInCents = priceInCents
+    }
+}
+
 public struct Dish: Identifiable, Hashable, Sendable {
     public let id: UUID
     public let name: String
     public let cuisine: String
     public let durationMinutes: Int
     public let videoURL: URL
+    public let ingredients: [Ingredient]
 
-    public init(id: UUID = UUID(), name: String, cuisine: String, durationMinutes: Int, videoURL: URL) {
+    public init(
+        id: UUID = UUID(),
+        name: String,
+        cuisine: String,
+        durationMinutes: Int,
+        videoURL: URL,
+        ingredients: [Ingredient] = []
+    ) {
         self.id = id
         self.name = name
         self.cuisine = cuisine
         self.durationMinutes = durationMinutes
         self.videoURL = videoURL
+        self.ingredients = ingredients
+    }
+}
+
+public struct ShoppingCart: Sendable {
+    public private(set) var items: [Ingredient] = []
+
+    public init() {}
+
+    public var totalInCents: Int {
+        items.reduce(0) { $0 + $1.priceInCents }
+    }
+
+    public mutating func addIngredients(for dish: Dish) {
+        let existingIDs = Set(items.map(\.id))
+        items.append(contentsOf: dish.ingredients.filter { !existingIDs.contains($0.id) })
+    }
+
+    public func containsIngredients(for dish: Dish) -> Bool {
+        let itemIDs = Set(items.map(\.id))
+        return !dish.ingredients.isEmpty && dish.ingredients.allSatisfy { itemIDs.contains($0.id) }
     }
 }
 
@@ -62,5 +105,9 @@ public struct SwipeDeck: Sendable {
 
     public mutating func reset() {
         currentIndex = 0
+    }
+
+    public mutating func removeSavedDish(id: UUID) {
+        savedDishes.removeAll { $0.id == id }
     }
 }

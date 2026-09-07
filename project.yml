@@ -47,6 +47,18 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.khoanguyen.DishSwipeTests
         GENERATE_INFOPLIST_FILE: YES
+  DishSwipeUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - Tests/DishSwipeUITests
+    dependencies:
+      - target: DishSwipe
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.khoanguyen.DishSwipeUITests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: DishSwipe
 schemes:
   DishSwipe:
     build:
@@ -57,3 +69,4 @@ schemes:
     test:
       targets:
         - DishSwipeTests
+        - DishSwipeUITests

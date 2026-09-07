@@ -4,11 +4,15 @@ A native iPhone app for deciding what to eat by swiping through short dish video
 
 ## What it does
 
-- Plays five bundled food videos in a looping, full-bleed card
+- Plays five bundled food videos edge-to-edge behind the complete interface
 - Swipe right (or tap **Crave**) to save a dish
 - Swipe left (or tap **Pass**) to skip it
+- Uses a warm red, white, blue, and rounded grocery-store visual theme
 - Shows swipe-direction feedback, deck progress, and a completion state
-- Keeps saved dishes in a **Your cravings** sheet for the current session
+- Lets you remove dishes from **Your cravings**
+- Adds every ingredient for a craved dish to a duplicate-safe shopping cart
+- Shows ingredient amounts, estimated individual prices, and an estimated cart total
+- Includes a prototype checkout button with a confirmation modal; it does not place an order or charge anything
 - Works offline; no account, API key, backend, or network connection is required
 - Includes VoiceOver labels and 44pt-or-larger controls
 
@@ -32,7 +36,7 @@ A native iPhone app for deciding what to eat by swiping through short dish video
    open DishSwipe.xcodeproj
    ```
 
-3. In Xcode, choose the **DishSwipe** scheme and an iPhone simulator (for example, iPhone 16 Pro).
+3. In Xcode, choose the **DishSwipe** scheme and an available iPhone simulator (for example, iPhone 17 Pro).
 4. Press **⌘R**.
 
 No signing team is required for the simulator.
@@ -45,8 +49,10 @@ With full Xcode:
 xcodebuild test \
   -project DishSwipe.xcodeproj \
   -scheme DishSwipe \
-  -destination 'platform=iOS Simulator,name=iPhone 16 Pro'
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
 ```
+
+This runs seven domain/unit tests and two simulator-driven UI tests covering craving removal and the complete add-to-cart/checkout flow.
 
 The platform-independent swipe engine can also be checked without Xcode:
 
@@ -58,8 +64,9 @@ swift run DishSwipeCoreChecks
 
 ```text
 App/                         SwiftUI app and bundled videos
-Sources/DishSwipeCore/       Testable swipe/deck domain model
-Tests/DishSwipeCoreTests/    Swift Testing unit tests
+Sources/DishSwipeCore/       Testable swipe, cravings, and cart domain model
+Tests/DishSwipeCoreTests/    XCTest domain/unit tests
+Tests/DishSwipeUITests/      Simulator-driven end-to-end UI tests
 project.yml                  XcodeGen project definition
 Package.swift                Swift package for core checks
 ```

@@ -78,6 +78,17 @@
                ReferencedContainer = "container:DishSwipe.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "053FB50AA80B848D84595783"
+               BuildableName = "DishSwipeUITests.xctest"
+               BlueprintName = "DishSwipeUITests"
+               ReferencedContainer = "container:DishSwipe.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <CommandLineArguments>
       </CommandLineArguments>

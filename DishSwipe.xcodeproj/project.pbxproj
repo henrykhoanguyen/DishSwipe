@@ -20,6 +20,7 @@
 		C8B86B427142E2B072D6781D /* DishSwipeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9410293E39035738180BBDA /* DishSwipeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC939BFD25079E6C9D056EB1 /* ramen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA711A4D073E9D3FDE179B86 /* ramen.mp4 */; };
 		DFD8CE050723759BA92625CD /* DishSwipeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9410293E39035738180BBDA /* DishSwipeCore.framework */; };
+		E5EAB5A702B36A05DEC0552B /* DishSwipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A51B29587A7DA3555A16 /* DishSwipeUITests.swift */; };
 		EB07C47FCBBD9E1F831A5804 /* DishSwipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AD900AC07FADDC007583BA /* DishSwipeApp.swift */; };
 		FFA7BC1FC31AC04FAD1FEC9B /* DishSwipeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9410293E39035738180BBDA /* DishSwipeCore.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E286402EB84F7B056664E7B3;
 			remoteInfo = DishSwipeCore;
+		};
+		33F8FE1AFF9E870B22920615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B3801F7EEBADE2A7B863D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2EE7928436B6D93A4884538;
+			remoteInfo = DishSwipe;
 		};
 		46EF1B2E6A8914D5247DA51B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -73,8 +81,10 @@
 		5B6297D1BE2F24915104E8AE /* SwipeDeckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDeckTests.swift; sourceTree = "<group>"; };
 		5CA7A57DD4480F37C9B78555 /* pizza.mp4 */ = {isa = PBXFileReference; path = pizza.mp4; sourceTree = "<group>"; };
 		77CE8F463A5F95CF174F6AED /* DishSwipeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DishSwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4345539141CB419DC3C8839 /* DishSwipeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DishSwipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5267B0581349A9F5CD59444 /* curry.mp4 */ = {isa = PBXFileReference; path = curry.mp4; sourceTree = "<group>"; };
 		C9410293E39035738180BBDA /* DishSwipeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DishSwipeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD81A51B29587A7DA3555A16 /* DishSwipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishSwipeUITests.swift; sourceTree = "<group>"; };
 		D1262F760BD46E93B00D4C1E /* tacos.mp4 */ = {isa = PBXFileReference; path = tacos.mp4; sourceTree = "<group>"; };
 		D1896742456D0FE8F3C11BAE /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		DA711A4D073E9D3FDE179B86 /* ramen.mp4 */ = {isa = PBXFileReference; path = ramen.mp4; sourceTree = "<group>"; };
@@ -118,8 +128,18 @@
 				8AF946B842BD56BAE9AABDD3 /* App */,
 				3D6CFA5ACC80C31BB77E6B3C /* DishSwipeCore */,
 				F55BFAF0232E060DF8990D2A /* DishSwipeCoreTests */,
+				5C5A740D85F1BEC69BDD3CF0 /* DishSwipeUITests */,
 				B1966F031D1C955A071BC7DB /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		5C5A740D85F1BEC69BDD3CF0 /* DishSwipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD81A51B29587A7DA3555A16 /* DishSwipeUITests.swift */,
+			);
+			name = DishSwipeUITests;
+			path = Tests/DishSwipeUITests;
 			sourceTree = "<group>";
 		};
 		84E894368B31CB14D3765887 /* Resources */ = {
@@ -148,6 +168,7 @@
 				4ED4856B7368B13E231391A7 /* DishSwipe.app */,
 				C9410293E39035738180BBDA /* DishSwipeCore.framework */,
 				77CE8F463A5F95CF174F6AED /* DishSwipeTests.xctest */,
+				A4345539141CB419DC3C8839 /* DishSwipeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +197,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		053FB50AA80B848D84595783 /* DishSwipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62F111FB7CB14FF35C4A7F5 /* Build configuration list for PBXNativeTarget "DishSwipeUITests" */;
+			buildPhases = (
+				202C368FB2268D92FED965EE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B53B93A257D95774A9695F2 /* PBXTargetDependency */,
+			);
+			name = DishSwipeUITests;
+			packageProductDependencies = (
+			);
+			productName = DishSwipeUITests;
+			productReference = A4345539141CB419DC3C8839 /* DishSwipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A2EE7928436B6D93A4884538 /* DishSwipe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 896917F1E07B729969B12694 /* Build configuration list for PBXNativeTarget "DishSwipe" */;
@@ -243,6 +282,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					053FB50AA80B848D84595783 = {
+						DevelopmentTeam = "";
+						TestTargetID = A2EE7928436B6D93A4884538;
+					};
 					A2EE7928436B6D93A4884538 = {
 						DevelopmentTeam = "";
 					};
@@ -271,6 +314,7 @@
 				E286402EB84F7B056664E7B3 /* DishSwipeCore */,
 				A2EE7928436B6D93A4884538 /* DishSwipe */,
 				E06C2AB2228EED8F0D7531DD /* DishSwipeTests */,
+				053FB50AA80B848D84595783 /* DishSwipeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,6 +343,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		202C368FB2268D92FED965EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EAB5A702B36A05DEC0552B /* DishSwipeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CAA914A8E6010ADCA980C92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +373,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0B53B93A257D95774A9695F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2EE7928436B6D93A4884538 /* DishSwipe */;
+			targetProxy = 33F8FE1AFF9E870B22920615 /* PBXContainerItemProxy */;
+		};
 		215AD6BCC31A85B01ECA8DB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E286402EB84F7B056664E7B3 /* DishSwipeCore */;
@@ -427,6 +484,23 @@
 			};
 			name = Release;
 		};
+		A7239E2D1AF918E5BFE7E561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DishSwipe;
+			};
+			name = Release;
+		};
 		D279954588605D27B16860D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -504,6 +578,23 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		D9681FE5F9FF4021C29FD7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoanguyen.DishSwipeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DishSwipe;
 			};
 			name = Debug;
 		};
@@ -588,6 +679,15 @@
 			buildConfigurations = (
 				29542C42D4924481B52E1DAC /* Debug */,
 				002D177D412EE15DE81E0E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A62F111FB7CB14FF35C4A7F5 /* Build configuration list for PBXNativeTarget "DishSwipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9681FE5F9FF4021C29FD7A9 /* Debug */,
+				A7239E2D1AF918E5BFE7E561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
